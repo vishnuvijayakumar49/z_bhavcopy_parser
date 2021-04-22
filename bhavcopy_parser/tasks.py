@@ -39,9 +39,8 @@ def download_file(url, header):
   z.extractall('bhav_files/')
 
 schedule.every().day.at("18:30").do(parser)
-schedule.every(5).seconds.do(parser)
+# schedule.every(5).seconds.do(parser)
 
 while 1:
   schedule.run_pending()
-  print('check')
   time.sleep(1)
